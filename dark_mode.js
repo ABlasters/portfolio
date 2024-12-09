@@ -1,4 +1,4 @@
-// script.js
+//MADE BY CHATGPT WITH MENTOR GPT BY BENJAMIN DEBON (BENJAMINCODE ON YOUTUBE)
 
 // Sélectionner les éléments
 const toggleButton = document.getElementById('toggle-dark-mode');
@@ -16,10 +16,10 @@ toggleButton.addEventListener('click', () => {
 
     // Changer l'image en fonction du mode
     if (body.classList.contains('dark-mode')) {
-        themeImage.src = darkModeImage; // Image pour le mode sombre
-        toggleButton.textContent = lightModeImage;
+        themeImage.src = lightModeImage; // Image pour le mode sombre
+        toggleButton.firstElementChild = darkModeImage;
     } else {
-        themeImage.src = lightModeImage; // Image pour le mode clair
-        toggleButton.textContent = darkModeImage;
+        themeImage.src = darkModeImage; // Image pour le mode clair
+        toggleButton.firstElementChild = lightModeImage;
     }
 });
