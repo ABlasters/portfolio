@@ -2,31 +2,6 @@ html{
     margin: 10px;
     padding: 10px;
 }
-/* DARK MODE*/
-
-/* Style par défaut (mode clair) */
-html{
-    background-color: white;
-    color: black;
-    transition: background-color 0.3s, color 0.3s;
-}
-button{
-    display: block;
-    margin: 20px auto;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-}
-/* Mode sombre */
-html.dark-mode{
-    background-color: #000000;
-    color: white;
-}
-img#theme-image{
-    cursor: pointer;
-}
-/*FIN DU DARK MODE*/
-
 ul.header{
     list-style: none;
     top: 0;
