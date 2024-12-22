@@ -1,10 +1,18 @@
 // Récupérer la date actuelle
 const dateActuelle = new Date();
+const anneeActuelle = dateActuelle.getFullYear();
+const moisActuel = dateActuelle.getMonth();
+const jourActuel = dateActuelle.getDate();
 
 // Définir la date de naissance
 const dateNaissance = new Date('2009-06-27');
 
-// Calculer la différence entre les deux dates
-const age = new Date(dateActuelle - dateNaissance);
+// Calculer l'âge en années
+let age = anneeActuelle - dateNaissance.getFullYear();
 
-console.log(`Âge: ${age.years} ans, ${age.months} mois, ${age.days} jours`);
+// Ajuster si l'anniversaire n'est pas encore passé cette année
+if (moisActuel < dateNaissance.getMonth() || (moisActuel === dateNaissance.getMonth() && jourActuel < dateNaissance.getDate())) {
+    age--;
+}
+
+console.log(`Âge: ${age} ans`);
