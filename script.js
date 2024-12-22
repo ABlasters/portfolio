@@ -16,4 +16,9 @@ if (moisActuel < dateNaissance.getMonth() || (moisActuel === dateNaissance.getMo
 }
 
 console.log(`Âge: ${age} ans`);
-document.getElementById('age').innerText = `${age} ans`;
+const ageElement = document.getElementById('age');
+if (ageElement) {
+    ageElement.innerText = `${age} ans`;
+} else {
+    console.error("Element with id 'age' not found.");
+}
