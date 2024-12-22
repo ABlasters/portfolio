@@ -16,4 +16,4 @@ if (moisActuel < dateNaissance.getMonth() || (moisActuel === dateNaissance.getMo
 }
 
 console.log(`Âge: ${age} ans`);
-document.getElementById('age').innerText = ${age};
+document.getElementById('age').innerText = `${age} ans`;
