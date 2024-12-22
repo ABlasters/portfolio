@@ -21,3 +21,6 @@ ul.header li a{
 a{
     color: white;
 }
+a.ci:hover{
+    color: white;
+}

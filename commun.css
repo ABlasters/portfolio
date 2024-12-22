@@ -15,6 +15,10 @@ p{
 a:hover{
     color: #787878;
 }
+a.ci{
+    cursor: text;
+    text-decoration: none;
+}
 .mod{
     position: absolute;
     top: 15px;
