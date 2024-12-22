@@ -1,12 +1,3 @@
-ul.header{
-    list-style: none;
-    top: 0;
-    position: relative;
-    text-align: center;
-    background-color: #787878;
-    margin-left: 10%;
-    margin-right: 10%;
-}
 ul.header li{
     display: inline-block;
     margin: 1.75%;

@@ -5,6 +5,15 @@ html{
     color: white;
     background-color: #333;
 }
+ul.header{
+    list-style: none;
+    top: 0;
+    position: relative;
+    text-align: center;
+    background-color: #787878;
+    margin-left: 10%;
+    margin-right: 10%;
+}
 ul.header li a{
     color: black;
     text-decoration: none;
