@@ -15,9 +15,17 @@ p{
 a:hover{
     color: #787878;
 }
+.cii{
+    display: none;
+}
 a.ci{
     cursor: text;
     text-decoration: none;
+}
+a.ci:hover{
+    .cii{
+        display: block;
+    }
 }
 .mod{
     position: absolute;
