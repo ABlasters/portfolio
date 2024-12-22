@@ -1,0 +1,14 @@
+html{
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: black;
+    background-color: rgb(165, 165, 165);
+}
+ul.header li a{
+    color: black;
+    text-decoration: none;
+}
+a{
+    color: black;
+}
