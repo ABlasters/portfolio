@@ -88,7 +88,6 @@ Passionné par les **drones** et les **chasses au trésor collaboratives**, j’
 
 ## 📩 Contact
 - **Email** : [arthur.lucas17290@gmail.com](mailto:arthur.lucas17290@gmail.com)
-- **Téléphone** : [+33 6 70 63 05 91](tel:+33670630591)
 - **GitHub** : [@ablasters](https://github.com/ablasters)
 - **Portfolio** : [ablasters.github.io/portfolio](https://ablasters.github.io/portfolio)
 
