@@ -1,0 +1,148 @@
+/* Dark mode */
+.dark-mode {
+    background-color: #121212;
+    color: white;
+}
+
+.dark-mode a {
+    color: white;
+}
+
+.dark-mode nav {
+    background-color: #212121;
+}
+
+.dark-mode ul.header li a {
+    color: white;
+}
+
+/* White mode */
+.light-mode {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.light-mode a {
+    color: #333;
+}
+
+.light-mode nav {
+    background-color: #ccc;
+}
+
+/* CSS Général */
+
+html {
+    margin-top: 130px;
+}
+
+section[id], div[id] {
+    scroll-margin-top: 130px;
+    /* À remplacer par la hauteur exacte de ta navbar */
+}
+
+div#burger {
+    display: none;
+    /* Masquer le menu burger par défaut */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+    /* S'assurer qu'il est au-dessus de tout */
+}
+
+div.borderbottom {
+    border-bottom: 1px solid #787878;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    box-sizing: border-box;
+    border-radius: 0px 0px 40px 40px;
+}
+
+ul.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding: 20px 20px;
+}
+
+ul.header li {
+    display: flex;
+    align-items: center;
+}
+
+ul.header li a {
+    text-decoration: none;
+}
+
+ul.header li div {
+    width: 30px;
+    height: auto;
+    text-align: center;
+}
+
+ul.header li div img {
+    width: 100%;
+    display: block;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    font-size: x-large;
+    margin: 20px;
+    line-height: 3;
+}
+
+a:hover {
+    color: #787878;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: smaller;
+}
+
+@media screen and (max-width: 1230px) {
+    html {
+        margin-top: 0px;
+    }
+
+    ul.header {
+        display: none;
+        flex-direction: column;
+    }
+
+    ul.header li a {
+        margin-bottom: 20px;
+    }
+
+    div#burger {
+        display: block;
+    }
+
+    section[id], div[id] {
+        scroll-margin-top: 10px; /* À remplacer par la hauteur exacte de ta navbar */
+    }
+
+    p {
+        font-size: xx-large;
+        margin-bottom: 40px;
+    }
+
+    a.mail {
+        font-size: smaller;
+    }
+}

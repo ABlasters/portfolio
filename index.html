@@ -11,56 +11,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio LUCAS Arthur</title>
-    <link rel="stylesheet" href="black.css">
-    <link rel="stylesheet" href="commun.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <script defer src="script.js"></script>
-<body>
+<body class="dark-mode">
     <nav>
         <ul class="header">
-            <li><a href="#1">PRÉSENTATION</a></li>
-            <li><a href="#2">À PROPOS</a></li>
-            <li><a href="#3">COMPÉTENCES</a></li>
-            <li><a href="#4">DIPLÔMES</a></li>
-            <li><a href="#5">EXPÉRIENCE</a></li>
-            <li><a href="#6">AUTRES INFORMATIONS</a></li>
-            <li><a href="#7">CONTACT</a></li>
+            <li id="presentation-link"><a href="#presentation">PRÉSENTATION</a></li>
+            <li id="a_propos-link"><a href="#a_propos">À PROPOS</a></li>
+            <li id="competences-link"><a href="#competences">COMPÉTENCES</a></li>
+            <li id="diplomes-link"><a href="#diplomes">DIPLÔMES</a></li>
+            <li id="experience-link"><a href="#experience">EXPÉRIENCE</a></li>
+            <li id="projet-link"><a href="#projet">PROJET</a></li>
+            <li id="autres_informations-link"><a href="#autres_informations">AUTRES INFORMATIONS</a></li>
+            <li id="contact-link"><a href="#contact">CONTACT</a></li>
+            <li><div><img id="mod" src="icon/light_mode.svg" alt=""></div></li>
         </ul>
     </nav>
-    <a href="light"><img class="mod" src="icon/light_mode.svg" alt=""></a>
-    <div id="1">
+    <div id="burger">
+        <img src="icon/burger.svg" alt="Burger Menu" id="burger-icon">
+    </div>
+    
+    <div id="presentation" class="borderbottom">
         <h1>PRÉSENTATION</h1>
-        <p>Je suis LUCAS Arthur né le 27/06/2009, j'ai <span id="age"></span>. J'habite à Aigrefeuille (17290). J'aime créer des sites sur mon temps libre comme celui-ci ou celui de mon <a href="https://brevet.netlify.app">oral de brevet</a>. <span title="J'ai appris le php et le js en codant ce site et plein de choses que je ne connaissait pas en html et css.">j'aime aussi apprendre de nouveaux langages de programation du web</span>, mais j'aime aussi créer des vidéos sur <a href="https://tiktok.com/@a.blasters">tiktok</a> ou <a href="https://youtube.com/@a.blasters">youtube</a>.</p>
+        <p>Je suis LUCAS Arthur né le 27/06/2009, j'ai <span id="age"></span>. J'habite à Aigrefeuille (17290).</p>
+        <p>J'aime créer des sites sur mon temps libre comme celui-ci ou celui de mon <a href="https://brevet.netlify.app">oral de brevet</a>.</p>
+        <p>J'aime aussi apprendre de nouveaux langages de programation du web, mais (quand l'envie m'en prend) j'aime aussi créer des vidéos sur <a href="https://youtube.com/@a.blasters">youtube</a>.</p>
     </div>
     <br>
-    <div id="2">
+    <div id="a_propos" class="borderbottom">
         <h1>À PROPOS</h1>
         <p>Organisé dans mon travail, calme, curieux, motivé, je suis prêt à m’investir avec sérieux dans tout type de développement de sites web.</p>
     </div>
     <br>
-    <div id="3">
+    <div id="competences" class="borderbottom">
         <h1>COMPÉTENCES</h1>
-        <p>Je maitrise les base du html et du css, <span title="Du choix des composants au montage dans la tour jusqu'à l'utilisation de windows">j'ai monté mon ordinateur</span>, Je m'adapte facilment au différent IDE et sais utiliser des logiciels de montage vidéos.</p>
+        <p>Je maîtrise le HTML/CSS/JS, ai monté mon ordinateur, m'adapte facilement aux différents IDE et sais utiliser des logiciels de montage vidéos.</p>
     </div>
     <br>
-    <div id="4">
+    <div id="diplomes" class="borderbottom">
         <h1>DIPLÔMES</h1>
-        <p>Je suis au Lycée Marcel Dassault de Rochefort (17300) en seconde générale avec l'option science de l'ingenieur (SI). J'ai eu mon brevet des collèges avec la mention bien et la certification pix.</p>
+        <p>Je suis au Lycée Marcel Dassault de Rochefort (17300) en Terminale générale avec les spécialités Numérique et Sciences informatiques (NSI) et maths. J'ai eu mon brevet des collèges avec la mention bien et la certification pix.</p>
     </div>
     <br>
-    <div id="5">
+    <div id="experience" class="borderbottom">
         <h1>EXPÉRIENCE</h1>
-        <p>J'ai réalisé un stage d'observation en <span title="du 11 au 15">décembre 2023</span> dans l'entreprise <a href="https://Les-tilleuls.coop">Les-tilleuls.coop</a> durant lequel j'ai pu voir le travail en équipe, découvrir le javascript (JS) et créer un <a href="https://brevet.netlify.app/site_stage/index.html">portfolio</a>.</p>
+        <p>J'ai réalisé un stage d'observation en décembre 2023 dans l'entreprise <a href="https://Les-tilleuls.coop">Les-tilleuls.coop</a> durant lequel j'ai pu voir le travail en équipe, découvrir le javascript (JS) et créer un <a href="https://brevet.netlify.app/site_stage/index.html">premier site internet propre</a>.</p>
     </div>
     <br>
-    <div id="6">
+    <div id="projet" class="borderbottom">
+        <h1>PROJETS</h1>
+        <ul>
+            <li><h2><a href="https://drone-weather-check.vercel.app/">Drone-Weather-Check</a> : Application web pour le suivi météorologique avant le vol des drones.</h2></li>
+            <li><h2><a href="https://calculateur-note-bac.vercel.app/">Calculateur de Notes de Bac</a> : Application web pour calculer les notes de bac.</h2></li>
+            <li><h2>En cours de développement: <a href="#projet">Terra Pursuit</a> : Application web proposant des chasses au trésor dans des petits villages (<a href="https://www.terra-aventura.fr/">Terra Aventura</a> rural et collaboratif).</h2></li>
+        </ul>
+
+    </div>
+    <br>
+    <div id="autres_informations" class="borderbottom">
         <h1>AUTRES INFORMATIONS</h1>
-        <p>Je suis passionné par l'informatique et le web, j'aime aussi les jeux vidéos, j'ai passé le code de la route, ai terminé les leçons pour la conduite accompagné et ai le PSC1.</p>
+        <p>Je suis passionné par l'informatique et le web, j'aime aussi les jeux vidéos, j'ai passé le code de la route, passe prochainement le permis de conduire et ai le PSC1.</p>
     </div>
     <br>
-    <div id="7">
+    <div id="contact">
         <h1>CONTACT</h1>
         <p>Vous pouvez me contacter par mail à l'adresse <a href="mailto:arthur.lucas17290@gmail.com" class="mail">arthur.lucas17290@gmail.com</a> ou par téléphone au <a href="tel:+33670630591">06 70 63 05 91.</a></p>
+        <p style="font-style: italic; ">Formulaire de contact à venir.</p>
     </div>
     <br>
     <footer>
