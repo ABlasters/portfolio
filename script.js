@@ -1,17 +1,15 @@
 // Récupérer la date actuelle
 const dateActuelle = new Date();
-const anneeActuelle = dateActuelle.getFullYear();
 const moisActuel = dateActuelle.getMonth();
-const jourActuel = dateActuelle.getDate();
 
 // Définir la date de naissance
 const dateNaissance = new Date('2009-06-27');
 
 // Calculer l'âge en années
-let age = anneeActuelle - dateNaissance.getFullYear();
+let age = dateActuelle.getFullYear() - dateNaissance.getFullYear();
 
 // Ajuster si l'anniversaire n'est pas encore passé cette année
-if (moisActuel < dateNaissance.getMonth() || (moisActuel === dateNaissance.getMonth() && jourActuel < dateNaissance.getDate())) { age--; }
+if (moisActuel < dateNaissance.getMonth() || (moisActuel === dateNaissance.getMonth() && dateActuelle.getDate() < dateNaissance.getDate())) { age--; }
 
 console.log(`Âge: ${age} ans`);
 const ageElement = document.getElementById('age');
@@ -36,15 +34,8 @@ const burgerIcon = document.getElementById('burger-icon');
 const headerMenu = document.querySelector('ul.header');
 const navLinks = document.querySelectorAll('ul.header li a');
 
-burgerIcon.addEventListener('click', function () {
-    headerMenu.style.display = headerMenu.style.display === 'flex' ? 'none' : 'flex';
-});
+burgerIcon.addEventListener('click', function () { if (window.innerWidth <= 1230) { if (headerMenu.style.display === 'flex') { headerMenu.style.display = 'none'; } else { headerMenu.style.display = 'flex'; } } });
 
-// Fermer le menu burger lorsque l'utilisateur clique sur un lien et que la largeur de l'écran est inférieure ou égale à 1230px
-if (window.innerWidth <= 1230) {       
-    navLinks.forEach(link => {
-        link.addEventListener('click', function () {
-            headerMenu.style.display = 'none';
-        });
-    });
-}
+navLinks.forEach(link => { link.addEventListener('click', function () { if (window.innerWidth <= 1230) { headerMenu.style.display = 'none'; } }); });
+
+addEventListener('resize', function () { if (window.innerWidth > 1230) { headerMenu.style.display = 'flex'; } if (window.innerWidth <= 1230) { headerMenu.style.display = 'none'; } });

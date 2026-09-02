@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta name="description" content="Portfolio de LUCAS Arthur, développeur web passionné. Découvrez mes compétences, expériences et projets.">
-    <meta name="keywords" content="LUCAS Arthur, portfolio, développeur web, compétences, expériences, projets, HTML, CSS, JavaScript">
+    <meta name="description" content="Portfolio d'Arthur LUCAS, développeur web front-end passionné. Découvrez mes projets en HTML/CSS/JS, mon parcours en NSI et mes réalisations open source.">
+    <meta name="keywords" content="Arthur LUCAS, portfolio, développeur web, front-end, HTML, CSS, JavaScript, NSI, projets web, Rochefort">
     <meta name="author" content="LUCAS Arthur">
     <meta property="og:title" content="Portfolio LUCAS Arthur">
+    <meta property="og:locale" content="fr_FR">
     <meta property="og:description" content="Découvrez le portfolio de LUCAS Arthur, développeur web passionné.">
     <meta name="twitter:title" content="Portfolio LUCAS Arthur">
     <meta name="twitter:description" content="Découvrez le portfolio de LUCAS Arthur, développeur web passionné.">
@@ -12,8 +13,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio LUCAS Arthur</title>
     <link rel="stylesheet" href="style.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Arthur LUCAS",
+      "url": "https://ablasters.github.io/portfolio/",
+      ""email": "mailto:arthur.lucas17290@gmail.com",
+      "jobTitle": "Développeur Web Front-End",
+      "address": {
+        "@type": "Place",
+        "addressLocality": "Aigrefeuille",
+        "addressRegion": "Charente-Maritime",
+        "addressCountry": "France"
+      },
+      "sameAs": [
+        "https://github.com/ablasters",
+        "https://www.linkedin.com/in/arthur-lucas-0a8819414"
+      ]
+    }
+    </script>
+    <script defer src="script.js"></script>
 </head>
-<script defer src="script.js"></script>
 <body class="dark-mode">
     <nav>
         <ul class="header">
@@ -21,69 +42,63 @@
             <li id="a_propos-link"><a href="#a_propos">À PROPOS</a></li>
             <li id="competences-link"><a href="#competences">COMPÉTENCES</a></li>
             <li id="diplomes-link"><a href="#diplomes">DIPLÔMES</a></li>
-            <li id="experience-link"><a href="#experience">EXPÉRIENCE</a></li>
-            <li id="projet-link"><a href="#projet">PROJET</a></li>
+            <li id="experiences-link"><a href="#experiences">EXPÉRIENCES</a></li>
+            <li id="projets-link"><a href="#projets">PROJETS</a></li>
             <li id="autres_informations-link"><a href="#autres_informations">AUTRES INFORMATIONS</a></li>
             <li id="contact-link"><a href="#contact">CONTACT</a></li>
-            <li><div><img id="mod" src="icon/light_mode.svg" alt=""></div></li>
+            <li><div><img id="mod" alt="Basculer en mode clair/sombre" src="icon/light_mode.svg"></div></li>
         </ul>
     </nav>
     <div id="burger">
         <img src="icon/burger.svg" alt="Burger Menu" id="burger-icon">
     </div>
     
-    <div id="presentation" class="borderbottom">
+    <section id="presentation" class="borderbottom">
         <h1>PRÉSENTATION</h1>
-        <p>Je suis LUCAS Arthur né le 27/06/2009, j'ai <span id="age"></span>. J'habite à Aigrefeuille (17290).</p>
+        <p>Je m'appelle Arthur LUCAS, je suis né en 2009 et j'ai <span id="age"></span>. J'habite à Aigrefeuille (17290).</p>
         <p>J'aime créer des sites sur mon temps libre comme celui-ci ou celui de mon <a href="https://brevet.netlify.app">oral de brevet</a>.</p>
-        <p>J'aime aussi apprendre de nouveaux langages de programation du web, mais (quand l'envie m'en prend) j'aime aussi créer des vidéos sur <a href="https://youtube.com/@a.blasters">youtube</a>.</p>
-    </div>
-    <br>
-    <div id="a_propos" class="borderbottom">
+        <p>J'aime aussi apprendre de nouveaux langages de programmation du web, mais (quand l'envie m'en prend) j'aime aussi créer des vidéos sur <a href="https://youtube.com/@a.blasters">YouTube</a>.</p>
+    </section>
+    <section id="a_propos" class="borderbottom">
         <h1>À PROPOS</h1>
         <p>Organisé dans mon travail, calme, curieux, motivé, je suis prêt à m’investir avec sérieux dans tout type de développement de sites web.</p>
-    </div>
-    <br>
-    <div id="competences" class="borderbottom">
+    </section>
+    <section id="competences" class="borderbottom">
         <h1>COMPÉTENCES</h1>
-        <p>Je maîtrise le HTML/CSS/JS, ai monté mon ordinateur, m'adapte facilement aux différents IDE et sais utiliser des logiciels de montage vidéos.</p>
-    </div>
-    <br>
-    <div id="diplomes" class="borderbottom">
+        <p>Je maîtrise le HTML/CSS/JS, ai monté mon ordinateur, m'adapte facilement aux différents IDE et sais utiliser des logiciels de montage vidéo.</p>
+    </section>
+    <section id="diplomes" class="borderbottom">
         <h1>DIPLÔMES</h1>
-        <p>Je suis au Lycée Marcel Dassault de Rochefort (17300) en Terminale générale avec les spécialités Numérique et Sciences informatiques (NSI) et maths. J'ai eu mon brevet des collèges avec la mention bien et la certification pix.</p>
-    </div>
-    <br>
-    <div id="experience" class="borderbottom">
-        <h1>EXPÉRIENCE</h1>
-        <p>J'ai réalisé un stage d'observation en décembre 2023 dans l'entreprise <a href="https://Les-tilleuls.coop">Les-tilleuls.coop</a> durant lequel j'ai pu voir le travail en équipe, découvrir le javascript (JS) et créer un <a href="https://brevet.netlify.app/site_stage/index.html">premier site internet propre</a>.</p>
-    </div>
-    <br>
-    <div id="projet" class="borderbottom">
+        <p>Je suis au Lycée Marcel Dassault de Rochefort (17300) en Terminale générale avec les spécialités Numérique et Sciences informatiques (NSI) et maths. J'ai eu mon brevet des collèges avec la mention bien et la certification Pix.</p>
+    </section>
+    <section id="experiences" class="borderbottom">
+        <h1>EXPÉRIENCES</h1>
+        <p>J'ai réalisé un stage d'observation en décembre 2023 dans l'entreprise <a href="https://Les-tilleuls.coop">Les-tilleuls.coop</a> durant lequel j'ai pu voir le travail en équipe, découvrir le JavaScript (JS) et créer un <a href="https://brevet.netlify.app/site_stage/index.html">premier site internet propre</a>.</p>
+    </section>
+    <section id="projets" class="borderbottom">
         <h1>PROJETS</h1>
         <ul>
-            <li><h2><span style="font-weight: bold; font-style: italic; color: gray;">En cours de développement / En ligne: </span><a href="https://drone-weather-check.vercel.app/">Drone-Weather-Check</a> : Application web pour le suivi météorologique avant le vol des drones.</h2></li>
-            <li><h2><span style="font-weight: bold; font-style: italic; color: gray;">VibeCodé - </span><a href="https://calculateur-note-bac.vercel.app/">Calculateur de Notes de Bac</a> : Application web pour calculer les notes de bac.</h2></li>
-            <li><h2><span style="font-weight: bold; font-style: italic; color: gray;">En cours de développement: </span><a href="#projet">Terra Pursuit</a> : Application web proposant des chasses au trésor dans des petits villages (<a href="https://www.terra-aventura.fr/">Terra Aventura</a> rural et collaboratif).</h2></li>
-            <li><h2><span style="font-weight: bold; font-style: italic; color: gray;">En cours de développement: </span><a href="#projet">Q-UP (nom provisoire)</a> : Application web proposant de la gestion de playlists musicales collaboratives pour les soirées.</h2></li>
-            <li><h2><span style="font-weight: bold; font-style: italic; color: gray;">En cours de développement: </span><a href="#projet">Multi UP alternative</a> : Application web pour upload des fichiers sur differentes plateformes (1fichier, ddownload, gofile, hexload, nitroflare, send, uploady).</h2></li>
-            <li><h2><span style="font-weight: bold; font-style: italic; color: gray;">VibeCodé - </span><a href="https://ascii-qrcode.vercel.app/">ASCII QR Code</a> : Application web pour générer des codes QR en ASCII.</h2></li>
-            <li><h2><span style="font-weight: bold; font-style: italic; color: gray;">En cours de développement: </span><a href="#projet">ToucheCoule JS</a> : Traduction du jeu "Touche Coule" codé en python durant un projet scolaire (NSI en Première), vers du javascript (JS).</h2></li>
+            <li><h2><span class="project-status">En cours de développement - Déployé : </span><a href="https://drone-weather-check.vercel.app/">Drone-Weather-Check</a> : Application web pour le suivi météorologique avant le vol des drones.</h2></li>
+            <li><h2><span class="project-status">VibeCodé - Déployé : </span><a href="https://calculateur-note-bac.vercel.app/">Calculateur de Notes de Bac</a> : Application web pour calculer les notes de bac.</h2></li>
+            <li><h2><span class="project-status">En cours de développement - Non déployé : </span><a href="#projets">Terra Pursuit</a> : Application web proposant des chasses au trésor dans des petits villages (<a href="https://www.terra-aventura.fr/">Terra Aventura</a> rural et collaboratif).</h2></li>
+            <li><h2><span class="project-status">En cours de développement - Non déployé : </span><a href="#projets">Q-UP (nom provisoire)</a> : Application web proposant de la gestion de playlists musicales collaboratives pour les soirées.</h2></li>
+            <li><h2><span class="project-status">En cours de développement - Non déployé : </span><a href="#projets">Multi UP alternative</a> : Application web téléverser des fichiers des fichiers sur différentes plateformes (1fichier, ddownload, gofile, hexload, nitroflare, send, uploady).</h2></li>
+            <li><h2><span class="project-status">VibeCodé - Déployé : </span><a href="https://ascii-qrcode.vercel.app/">ASCII QR Code</a> : Application web pour générer des codes QR en ASCII.</h2></li>
+            <li><h2><span class="project-status">En cours de développement - Non déployé : </span><a href="#projets">ToucheCoule JS</a> : Traduction du jeu "Touche Coule" codé en Python durant un projet scolaire (NSI en Première), vers JavaScript (JS).</h2></li>
         </ul>
-
-    </div>
-    <br>
-    <div id="autres_informations" class="borderbottom">
+    </section>
+    <section id="autres_informations" class="borderbottom">
         <h1>AUTRES INFORMATIONS</h1>
-        <p>Je suis passionné par l'informatique et le web, j'aime aussi les jeux vidéos, j'ai passé le code de la route, passe prochainement le permis de conduire et ai le PSC1.</p>
-    </div>
-    <br>
-    <div id="contact">
+        <p>Je suis passionné par l'informatique et le web, j'aime aussi les jeux vidéo, j’ai obtenu mon permis de conduire en août 2026 dès la première tentative et ai le PSC1.</p>
+    </section>
+    <section id="contact">
         <h1>CONTACT</h1>
         <p>Vous pouvez me contacter par mail à l'adresse <a href="mailto:arthur.lucas17290@gmail.com" class="mail">arthur.lucas17290@gmail.com</a>.</p>
+        <p>GitHub : <a href="https://github.com/ablasters">@ablasters</a></p>
+        <p>LinkedIn : <a href="https://www.linkedin.com/in/arthur-lucas-0a8819414">Profil LinkedIn</a></p>
+        <p>Code source : <a href="https://github.com/ablasters/portfolio/">Voir sur GitHub</a></p>
         <p style="font-style: italic; ">Formulaire de contact à venir.</p>
-    </div>
-    <br>
+    </section>
     <footer>
         <p>Site créé par LUCAS Arthur</p>
     </footer>

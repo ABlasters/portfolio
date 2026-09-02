@@ -1,42 +1,75 @@
+:root {
+    /* Couleurs */
+    --text-light: #333;
+    --text-dark: white;
+    --bg-light: #f0f0f0;
+    --bg-dark: #121212;
+    --nav-light: #ccc;
+    --nav-dark: #212121;
+    --border-light: black;
+    --border-dark: white;
+    --accent-color: #787878;
+}
+
+/* Transitions */
+a {
+    transition: color 0.3s ease;
+}
+
+body {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav {
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
 /* Dark mode */
 .dark-mode {
-    background-color: #121212;
-    color: white;
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
 }
 
 .dark-mode a {
-    color: white;
+    color: var(--text-dark);
 }
 
 .dark-mode nav {
-    background-color: #212121;
+    background-color: var(--nav-dark);
+    border-bottom: 1px solid var(--border-dark);
+    border-left: 1px solid var(--border-dark);
+    border-right: 1px solid var(--border-dark);
 }
 
 .dark-mode ul.header li a {
-    color: white;
+    color: var(--text-dark);
 }
 
 /* White mode */
 .light-mode {
-    background-color: #f0f0f0;
-    color: #333;
+    background-color: var(--bg-light);
+    color: var(--text-light);
 }
 
 .light-mode a {
-    color: #333;
+    color: var(--text-light);
 }
 
 .light-mode nav {
-    background-color: #ccc;
+    background-color: var(--nav-light);
+    border-bottom: 1px solid var(--border-light);
+    border-left: 1px solid var(--border-light);
+    border-right: 1px solid var(--border-light);
 }
 
 /* CSS Général */
 
-html {
-    margin-top: 130px;
+body {
+    padding-top: 130px;
+    overflow-x: hidden;
 }
 
-section[id], div[id] {
+section[id] {
     scroll-margin-top: 130px;
     /* À remplacer par la hauteur exacte de ta navbar */
 }
@@ -51,7 +84,7 @@ div#burger {
     /* S'assurer qu'il est au-dessus de tout */
 }
 
-div.borderbottom {
+section.borderbottom {
     border-bottom: 1px solid #787878;
 }
 
@@ -99,14 +132,24 @@ h1 {
     text-align: center;
 }
 
+section {
+    margin-bottom: 40px;
+}
+
 p {
     font-size: x-large;
     margin: 20px;
-    line-height: 3;
+    line-height: 1.6;
 }
 
 a:hover {
     color: #787878;
+}
+
+.project-status {
+    font-weight: bold;
+    font-style: italic;
+    color: gray;
 }
 
 footer {
@@ -115,9 +158,19 @@ footer {
     font-size: smaller;
 }
 
+#burger-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
 @media screen and (max-width: 1230px) {
-    html {
-        margin-top: 0px;
+    body {
+        padding-top: 0px;
+    }
+
+    .dark-mode nav, .light-mode nav {
+        border: none;
     }
 
     ul.header {
@@ -133,7 +186,7 @@ footer {
         display: block;
     }
 
-    section[id], div[id] {
+    section[id] {
         scroll-margin-top: 10px; /* À remplacer par la hauteur exacte de ta navbar */
     }
 
