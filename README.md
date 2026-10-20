@@ -124,10 +124,6 @@ Passionné par les **drones** et les **chasses au trésor collaboratives**, j’
 
 ---
 
-> ⚡ *Ce portfolio est généré avec l’aide de [Mistral Vibe](https://marketplace.visualstudio.com/items?itemName=mistralai.mistral-vibe-code), mais 100% du code est écrit et compris par mes soins.*
-
----
-
 ![Last Commit](https://img.shields.io/github/last-commit/ablasters/portfolio?style=flat)
 [![Visiteurs](https://visitor-badge.laobi.icu/badge?page_id=ablasters.portfolio)](https://github.com/laobi/visitor-badge)
 
