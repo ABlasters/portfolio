@@ -19,11 +19,10 @@
       "@type": "Person",
       "name": "Arthur LUCAS",
       "url": "https://ablasters.github.io/portfolio/",
-      ""email": "mailto:arthur.lucas17290@gmail.com",
+      "email": "mailto:arthur.lucas17290@gmail.com",
       "jobTitle": "Développeur Web Front-End",
       "address": {
         "@type": "Place",
-        "addressLocality": "Aigrefeuille",
         "addressRegion": "Charente-Maritime",
         "addressCountry": "France"
       },
@@ -34,6 +33,7 @@
     }
     </script>
     <script defer src="script.js"></script>
+    <script src="https://w.soundcloud.com/player/api.js"></script>
 </head>
 <body class="dark-mode">
     <nav>
@@ -50,12 +50,12 @@
         </ul>
     </nav>
     <div id="burger">
-        <img src="icon/burger.svg" alt="Burger Menu" id="burger-icon">
+        <img src="icon/burger_light.svg" alt="Burger Menu" id="burger-icon">
     </div>
     
     <section id="presentation" class="borderbottom">
         <h1>PRÉSENTATION</h1>
-        <p>Je m'appelle Arthur LUCAS, je suis né en 2009 et j'ai <span id="age"></span>. J'habite à Aigrefeuille (17290).</p>
+        <p>Je m'appelle Arthur LUCAS, je suis né en 2009 et j'ai <span id="age"></span>. J'habite en Charente-Maritime.</p>
         <p>J'aime créer des sites sur mon temps libre comme celui-ci ou celui de mon <a href="https://brevet.netlify.app">oral de brevet</a>.</p>
         <p>J'aime aussi apprendre de nouveaux langages de programmation du web, mais (quand l'envie m'en prend) j'aime aussi créer des vidéos sur <a href="https://youtube.com/@a.blasters">YouTube</a>.</p>
     </section>
@@ -100,7 +100,7 @@
         <p style="font-style: italic; ">Formulaire de contact à venir.</p>
     </section>
     <footer>
-        <p>Site créé par LUCAS Arthur</p>
+        <p id="footer-text">Site créé par LUCAS Arthur <button id="music-toggle" class="music-toggle" onclick="Music()"> <span aria-hidden="true">🎧</span></button></p>
     </footer>
 </body>
 </html>

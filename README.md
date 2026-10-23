@@ -41,11 +41,6 @@ Passionné par les **drones** et les **chasses au trésor collaboratives**, j’
 
 ## 🛠 Compétences
 
-### ✅ Maîtrisées
-- **Langages** : HTML5, CSS3 (Flexbox, Grid, animations), JavaScript (ES6+, DOM, Fetch API)
-- **Outils** : Git/GitHub, VS Code, Vercel, Netlify
-- **Méthodologies** : Responsive Design (mobile-first), Accessibilité (WCAG)
-
 ### 🌱 En apprentissage
 - Node.js (APIs REST)
 - SQL (Supabase)
@@ -106,19 +101,8 @@ Passionné par les **drones** et les **chasses au trésor collaboratives**, j’
 
 ---
 
-## ✨ Fonctionnalités du Site
-- **Navigation intuitive** : Menu complet avec ancres vers chaque section
-- **Mode sombre** : Toggle pour basculer entre les thèmes
-- **Menu responsive** : Adapté mobile avec menu burger
-- **Calcul d'âge dynamique** : L'âge est calculé automatiquement
-- **Design épuré** : Interface claire et professionnelle
-
----
-
 ## 🎨 Technologies Utilisées
 - **Frontend** : HTML5, CSS3, Vanilla JavaScript
-- **Backend** : Node.js, APIs REST
-- **Design** : Responsive (mobile-first), Google Fonts
 - **Outils** : Visual Studio Code, GitHub, Vercel
 - **Hébergement** : GitHub Pages (portfolio), Vercel (projets web), Netlify (site brevet)
 
